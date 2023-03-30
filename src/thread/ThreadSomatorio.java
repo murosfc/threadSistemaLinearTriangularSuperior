@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class ThreadSomatorio extends Thread {
 	private double[][] U;
-	private double[] b, soma, x;
+	private double[] b;
 	int n;
 	private Semaphore semAtual, semProximo;
 	
@@ -12,8 +12,7 @@ public class ThreadSomatorio extends Thread {
 	public ThreadSomatorio(double[][] U, double[] b, Semaphore semAtual, Semaphore semProximo) {
 		this.U = U;
 		this.b = b;
-		this.n = U.length;
-		this.x = new double[n];
+		this.n = U.length;		
 		this.semAtual = semAtual;
 		this.semProximo = semProximo;		
 	}
