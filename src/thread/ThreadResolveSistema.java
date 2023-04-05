@@ -1,3 +1,4 @@
+//Grupo: Felipe Muros, Gabriel Siqueira, Rafael Panisset e Rafael Teixeira
 package thread;
 
 import java.util.concurrent.Semaphore;
